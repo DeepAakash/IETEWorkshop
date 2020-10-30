@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Forum&family=Quicksand:wght@300&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+    background-image: url("Matrix-GIF-Find-Share-on-GIPHY.gif"); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main-block {
+	width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+    background: rgba(0, 0, 0, 0.5);    
+}
+
+form {
+	width: 100%;
+	background: #ffffff20;
+	border-radius: 20px; 
+	padding: 63px 55px 33px 55px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 23px;
+    margin-bottom: 20px;
+    padding: 0 0% 7%;
+    color: #eee;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 5px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    font-family: 'Forum', cursive;
+    font-size: 20px;
+    color: #eee;
+    border-bottom: 1px solid #eee;
+}
+
+input::placeholder {
+    color: #eee;
+}
+
+option:focus {
+    border: none;
+}
+option {
+    background: black; 
+    border: none;
+}
+    
+button {
+    padding: 10px 5px;
+    margin-top: 20px;
+    border-radius: 5px; 
+    border: none;
+    background: #26a9e0; 
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    width: 100%;
+}
+
+button:hover{
+    background: #008F11;
+}
+
+@media screen and (max-width: 1050px){
+    body{
+        background-size: 120%
+    }
+    .main-block{
+        width: 70%;
+        margin: 230px 0 0;
+    }
+}
+
+@media screen and (max-width:600px){
+    body{
+        background-size: 150%
+    }
+    .logo{
+        left: auto;
+    }
+    .main-block{
+        width: 75%;
+        margin: 70px 0 0;
+    }
+    form{
+        margin: 80px;
+        padding: 30px 25px 35px;
+    }
+    .title{
+        padding: 0;
+    }
+}

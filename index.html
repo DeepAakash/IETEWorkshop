@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+
+  	<meta charset="utf-8">
+    <title>My form</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <img class="logo" src="logo.jpg" alt="IETE" width="150px">
+    <div class="main-block">
+    	<script type="text/javascript">var submitted=false;</script>
+    	<iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+    	onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+      
+      <form autocomplete="off" method="POST" target="hidden_iframe" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfQ62WsWKnNNi9nNjrkbRiNuOABMe0DJLr68Ig6hCUNkkohIw/formResponse" onsubmit="submitted=true">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+          <h2>Register here</h2>
+        </div>
+        <div class="info">
+          <input class="fname" type="text" name="entry.706455108" pattern="[A-z ]{1,100}" placeholder="Full name" required>
+          <input type="text" name="entry.969200348" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+          <input type="tel" name="entry.1009028983" pattern="[0-9]{10}" placeholder="Phone number" required>
+          <select name="entry.1177451703">
+            <option value="course-type" selected>Year*</option>
+            <option value="short-courses">First </option>
+            <option value="featured-courses">Second</option>
+          </select>
+          <select name="entry.602004053">
+            <option value="Branch" selected>Branch*</option>
+            <option value="COE">COE</option>
+            <option value="CSE">CSE</option>
+            <option value="ENC">ENC</option>
+            <option value="MEC">MEC</option>
+            <option value="Bio-tech">Bio-tech</option>
+            <option value="EIC">EIC</option>
+            <option value="ECE">ECE</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+        
+        <a href= "#">
+          <button type="submit" >Submit</button>
+        </a>
+      </form>
+    </div>
+  </body>
+</html>

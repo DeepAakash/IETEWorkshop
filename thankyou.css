@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    color:rgb(255,255,255,0.9);
+    background-image: url("bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+}
+
+.header{
+    width: 35%; 
+}
+
+.thank{
+    font-size: 50px;
+}
+
+.Submitted{
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+
+.block{
+    width: 50%;
+    text-align: center;
+
+}
+img{
+    height: 300px;
+}
+.discord{
+   font-size: 25px;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+.btn{
+    width: 200px;
+    border-radius: 10px;
+    margin-top:5px ;
+    font-size: 15px;
+}
+
+.btn:hover{
+    background-color: #5fe6ff;
+}
+
+
+.btndiscord{
+    margin: 5px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-image: url("bgm3.jpg");
+        background-position: center;
+    }
+    .header{
+        position: absolute;
+        top: 0;
+        margin-top: 80px;
+        width: auto;
+    }
+    .logo{
+        width: 120px;
+        height: 120px;
+    }
+    .block{
+        width: 100%;
+    }
+    .thank{
+        font-size: 35px;
+        margin-top: 130px;
+    }
+    .Submitted{
+        font-size: 25px;
+    }
+    .discord{
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+    .btndiscord{
+        margin: 5px;
+    }
+}
